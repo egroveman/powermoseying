@@ -5,4 +5,4 @@ function stripTrailingSlash(str) {
     return str;
 }
 
-window.location.href = stripTrailingSlash(window.location.href);
+window.location.href = 'powermoseying.com/index';
