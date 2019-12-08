@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<section class="redirecting"><h1>Error, attempting to redirect…</h1></section>
-<script src="remove_trailing_slash.js"></script>
+<section class="redirecting"><h1>Error, attempting to redirect to your page…</h1></section>
+
+<script>
+function stripTrailingSlash(str) {
+    if(str.substr(-1) === '/') {
+        return str.substr(0, str.length - 1);
+    }
+    return str;
+}
+
+document.write(stripTrailingSlash(window.location.href));
+window.location.href = stripTrailingSlash(window.location.href);  
+</script>
+  
 </head>
 </body>
 </html>
