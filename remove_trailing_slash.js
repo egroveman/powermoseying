@@ -5,4 +5,5 @@ function stripTrailingSlash(str) {
     return str;
 }
 
+document.write(stripTrailingSlash(window.location.href));
 window.location.href = stripTrailingSlash(window.location.href);
