@@ -1,0 +1,6 @@
+perl -i -0pe 's/<div class="quicklinks".*Log Out.*a>//smg' *.html
+perl -i -0pe 's/<div class="navigation section no-padding bg-dark">.*navigation ..>//smg' *.html
+perl -i -0pe 's/<div class="widget jetpack.*div><div class="widget widget/<div class="widget widget/smg' *.html
+perl -i -pe 's/<a class="post-edit-link.*Edit<.a>//' *.html
+perl -i -0pe 's/<div id="respond.*respond ..>//smg' *.html
+perl -i -0pe 's/<div class="footer section large.*footer -->//smg' *.html
